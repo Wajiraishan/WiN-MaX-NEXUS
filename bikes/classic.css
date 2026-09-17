@@ -1,0 +1,1148 @@
+/* =========================================================
+   CLASSIC & CUSTOM PAGE
+   WiN MaX NEXUS
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.classic-hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(229, 9, 20, 0.16),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(180, 140, 60, 0.08),
+            transparent 30%
+        ),
+        #090909;
+}
+
+
+/* =========================================================
+   HERO DECORATION
+========================================================= */
+
+.classic-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border: 1px solid rgba(229, 9, 20, 0.18);
+
+    border-radius: 50%;
+
+    right: -180px;
+
+    top: 80px;
+
+    pointer-events: none;
+}
+
+
+.classic-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 50%;
+
+    right: 50px;
+
+    bottom: 40px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.classic-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.96) 0%,
+            rgba(0, 0, 0, 0.72) 55%,
+            rgba(0, 0, 0, 0.30) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.classic-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.classic-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(229, 9, 20, 0.5);
+
+    border-radius: 50px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+    background: rgba(229, 9, 20, 0.08);
+}
+
+
+.classic-badge i {
+
+    color: #e50914;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.classic-hero h1 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(55px, 8vw, 110px);
+
+    line-height: 0.95;
+
+    font-weight: 900;
+
+    letter-spacing: -4px;
+}
+
+
+.classic-hero h1 span {
+
+    display: block;
+
+    color: #e50914;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.classic-hero p {
+
+    max-width: 650px;
+
+    margin: 30px 0;
+
+    color: #bdbdbd;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   HERO STATS
+========================================================= */
+
+.classic-stats {
+
+    display: flex;
+
+    margin-top: 65px;
+
+    gap: 0;
+}
+
+
+.classic-stat {
+
+    min-width: 170px;
+
+    padding: 0 30px;
+
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.classic-stat:first-child {
+
+    padding-left: 0;
+
+    border-left: none;
+}
+
+
+.classic-stat strong {
+
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.classic-stat span {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   COLLECTION
+========================================================= */
+
+.classic-collection {
+
+    background:
+        linear-gradient(
+            180deg,
+            #090909,
+            #0d0d0d
+        );
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+
+.section-heading > span {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #e50914;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+}
+
+
+.section-heading h2 b {
+
+    color: #e50914;
+}
+
+
+.section-heading p {
+
+    margin-top: 18px;
+
+    color: #888888;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BIKE GRID
+========================================================= */
+
+.classic-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   BIKE CARD
+========================================================= */
+
+.classic-card {
+
+    overflow: hidden;
+
+    background: #111111;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: 0.4s ease;
+}
+
+
+.classic-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(229, 9, 20, 0.55);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.classic-card-image {
+
+    height: 300px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(229, 9, 20, 0.13),
+            transparent 55%
+        ),
+        #080808;
+}
+
+
+/* =========================================================
+   BIKE PLACEHOLDER
+========================================================= */
+
+.bike-placeholder {
+
+    width: 170px;
+
+    height: 170px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.5s ease;
+}
+
+
+.bike-placeholder i {
+
+    font-size: 75px;
+
+    color: #e50914;
+
+    transition: 0.5s ease;
+}
+
+
+.classic-card:hover .bike-placeholder {
+
+    transform: scale(1.08) rotate(-3deg);
+
+    border-color: rgba(229, 9, 20, 0.4);
+}
+
+
+.classic-card:hover .bike-placeholder i {
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CARD TAG
+========================================================= */
+
+.classic-tag {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    padding: 8px 13px;
+
+    background: #e50914;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   CARD NUMBER
+========================================================= */
+
+.card-number {
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 18px;
+
+    color: rgba(255, 255, 255, 0.15);
+
+    font-size: 42px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.classic-card-content {
+
+    padding: 30px;
+}
+
+
+.card-category {
+
+    color: #e50914;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.classic-card h3 {
+
+    margin: 10px 0;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+.classic-card-content p {
+
+    color: #858585;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   BIKE DETAILS
+========================================================= */
+
+.bike-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    padding: 18px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.bike-details div {
+
+    text-align: center;
+}
+
+
+.bike-details i {
+
+    display: block;
+
+    color: #e50914;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+.bike-details span {
+
+    color: #aaaaaa;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD BOTTOM
+========================================================= */
+
+.card-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.price small {
+
+    display: block;
+
+    color: #666666;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+}
+
+
+.price strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   INQUIRE BUTTON
+========================================================= */
+
+.inquire-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    background: transparent;
+
+    border: 1px solid rgba(229, 9, 20, 0.5);
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.inquire-btn i {
+
+    color: #e50914;
+}
+
+
+.inquire-btn:hover {
+
+    background: #e50914;
+
+    border-color: #e50914;
+
+    color: #ffffff;
+}
+
+
+.inquire-btn:hover i {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.classic-cta {
+
+    padding: 100px 0;
+
+    background: #090909;
+}
+
+
+.classic-cta-box {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #161616,
+            #0d0d0d
+        );
+
+    border: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+
+.classic-cta-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(229, 9, 20, 0.15);
+
+    right: -100px;
+
+    top: -100px;
+
+    pointer-events: none;
+}
+
+
+.cta-icon {
+
+    min-width: 80px;
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(229, 9, 20, 0.4);
+
+    color: #e50914;
+
+    font-size: 30px;
+}
+
+
+.cta-content {
+
+    flex: 1;
+}
+
+
+.cta-content > span {
+
+    color: #e50914;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.cta-content h2 {
+
+    margin: 8px 0;
+
+    color: #ffffff;
+
+    font-size: clamp(25px, 4vw, 42px);
+
+    font-weight: 900;
+}
+
+
+.cta-content h2 strong {
+
+    color: #e50914;
+}
+
+
+.cta-content p {
+
+    margin: 0;
+
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    background: #050505;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .classic-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .classic-cta-box {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .classic-cta-box .btn-white {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .classic-hero {
+
+        min-height: 90vh;
+
+    }
+
+
+    .classic-hero h1 {
+
+        font-size: 60px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .classic-hero p {
+
+        font-size: 14px;
+
+    }
+
+
+    .classic-stats {
+
+        margin-top: 45px;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    .classic-stat {
+
+        min-width: 0;
+
+        padding: 0 12px;
+
+    }
+
+
+    .classic-stat strong {
+
+        font-size: 13px;
+
+    }
+
+
+    .classic-stat span {
+
+        font-size: 8px;
+
+    }
+
+
+    .classic-card-image {
+
+        height: 260px;
+
+    }
+
+
+    .classic-cta-box {
+
+        padding: 35px 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 500px
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .classic-hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .hero-buttons a {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .classic-stats {
+
+        gap: 10px;
+
+    }
+
+
+    .classic-stat {
+
+        padding: 0 7px;
+
+    }
+
+
+    .classic-stat strong {
+
+        font-size: 11px;
+
+    }
+
+
+    .classic-stat span {
+
+        font-size: 7px;
+
+    }
+
+
+    .classic-card-content {
+
+        padding: 22px;
+
+    }
+
+
+    .classic-card h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .bike-details {
+
+        gap: 3px;
+
+    }
+
+
+    .bike-details span {
+
+        font-size: 8px;
+
+    }
+
+
+    .card-bottom {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .inquire-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .classic-cta-box {
+
+        text-align: center;
+
+        justify-content: center;
+
+    }
+
+
+    .cta-icon {
+
+        min-width: 70px;
+
+        height: 70px;
+
+    }
+
+}
+.category-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    background: rgba(255, 0, 0, 0.08);
+
+    color: #ff0000;
+    font-size: 28px;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 0, 0.15);
+
+    animation: categoryPulse 2.5s infinite;
+}
+
+.category-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+@keyframes categoryPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(255, 0, 0, 0.35);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(255, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(255, 0, 0, 0);
+    }
+
+}
+@media (max-width: 800px) {
+
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .category-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 14px;
+    }
+
+}

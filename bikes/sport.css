@@ -1,0 +1,680 @@
+/* =========================================
+   SPORT BIKES PAGE
+========================================= */
+
+.category-hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 90px;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(229, 9, 20, 0.22), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(229, 9, 20, 0.10), transparent 30%),
+        #070707;
+}
+
+.category-hero-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+    background-size: 55px 55px;
+}
+
+.category-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #e50914;
+}
+
+.breadcrumb span:last-child {
+    color: #e50914;
+}
+
+.category-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(229, 9, 20, 0.5);
+    background: rgba(229, 9, 20, 0.08);
+    color: #e50914;
+    font-size: 30px;
+    margin-bottom: 25px;
+    transform: skewX(-8deg);
+}
+
+.category-icon i {
+    transform: skewX(8deg);
+}
+
+.category-label {
+    display: block;
+    color: #e50914;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.category-hero h1 {
+    margin: 0;
+    font-size: clamp(50px, 8vw, 105px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -4px;
+}
+
+.category-hero h1 span {
+    color: #e50914;
+}
+
+.category-hero p {
+    max-width: 650px;
+    margin-top: 30px;
+    color: #a7a7a7;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.category-stats {
+    display: flex;
+    gap: 55px;
+    margin-top: 45px;
+}
+
+.category-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-stats strong {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.category-stats small {
+    margin-top: 5px;
+    color: #777;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   LISTINGS SECTION
+========================================= */
+
+.sport-listings {
+    padding: 110px 0;
+    background: #090909;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.section-heading > span {
+    color: #e50914;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.section-heading h2 {
+    margin: 12px 0 15px;
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.section-heading h2 strong {
+    color: #e50914;
+}
+
+.section-heading p {
+    max-width: 600px;
+    margin: auto;
+    color: #777;
+    line-height: 1.8;
+}
+/* =========================================
+   SPORT PAGE NAVBAR FIX
+========================================= */
+
+.navbar {
+    height: 78px;
+}
+
+.nav-container {
+    height: 78px;
+}
+
+.nav-logo img {
+    max-height: 48px;
+    width: auto;
+}
+
+.nav-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE NAVBAR
+========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+    .nav-container {
+        height: 70px;
+    }
+
+    .nav-logo img {
+        max-height: 42px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+/* =========================================
+   BIKE GRID
+========================================= */
+
+.bike-listing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================================
+   BIKE CARD
+========================================= */
+
+.sport-bike-card {
+    position: relative;
+    overflow: hidden;
+    background: #101010;
+    border: 1px solid #1c1c1c;
+    transition: 0.45s ease;
+}
+
+.sport-bike-card:hover {
+    border-color: rgba(229, 9, 20, 0.6);
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.sport-bike-image {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at center, rgba(229, 9, 20, 0.13), transparent 55%),
+        #0b0b0b;
+}
+
+.bike-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+    color: #333;
+}
+
+.bike-image-placeholder i {
+    font-size: 90px;
+    transition: 0.5s;
+}
+
+.bike-image-placeholder span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.sport-bike-card:hover .bike-image-placeholder i {
+    color: #e50914;
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.bike-status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 13px;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    z-index: 2;
+}
+
+.bike-status.available {
+    background: #e50914;
+    color: #fff;
+}
+
+.bike-number {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    color: rgba(255,255,255,0.08);
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.sport-bike-content {
+    padding: 30px;
+}
+
+.bike-type {
+    color: #e50914;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.sport-bike-content h3 {
+    margin: 9px 0 10px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.bike-description {
+    min-height: 50px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SPECS
+========================================= */
+
+.bike-specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 28px 0;
+    padding: 18px 0;
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.bike-specs div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bike-specs i {
+    margin-bottom: 4px;
+    color: #e50914;
+    font-size: 13px;
+}
+
+.bike-specs span {
+    color: #555;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bike-specs strong {
+    color: #ddd;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   PRICE + DETAILS
+========================================= */
+
+.bike-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bike-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.bike-price small {
+    color: #555;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bike-price strong {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.bike-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 15px;
+    color: #fff;
+    border: 1px solid #292929;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.bike-view-btn i {
+    color: #e50914;
+    transition: 0.3s;
+}
+
+.bike-view-btn:hover {
+    border-color: #e50914;
+    background: #e50914;
+}
+
+.bike-view-btn:hover i {
+    color: #fff;
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.bike-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #151515;
+    color: #ddd;
+    border: 1px solid #202020;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.bike-whatsapp i {
+    color: #25d366;
+    font-size: 16px;
+}
+
+.bike-whatsapp:hover {
+    color: #fff;
+    background: #25d366;
+    border-color: #25d366;
+}
+
+.bike-whatsapp:hover i {
+    color: #fff;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.sport-cta {
+    padding: 0 0 110px;
+    background: #090909;
+}
+
+.sport-cta-box {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 45px;
+    background:
+        linear-gradient(120deg, rgba(229,9,20,0.14), rgba(229,9,20,0.02)),
+        #111;
+    border: 1px solid #252525;
+}
+
+.sport-cta-box::after {
+    content: "NEXUS";
+    position: absolute;
+    right: -25px;
+    bottom: -35px;
+    color: rgba(255,255,255,0.025);
+    font-size: 100px;
+    font-weight: 900;
+    pointer-events: none;
+}
+
+.sport-cta-icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e50914;
+    color: #fff;
+    font-size: 30px;
+    transform: skewX(-8deg);
+}
+
+.sport-cta-icon i {
+    transform: skewX(8deg);
+}
+
+.sport-cta-content {
+    flex: 1;
+}
+
+.sport-cta-content > span {
+    color: #e50914;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.sport-cta-content h2 {
+    margin: 8px 0;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.sport-cta-content h2 strong {
+    color: #e50914;
+}
+
+.sport-cta-content p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .category-hero {
+        min-height: 570px;
+    }
+
+    .bike-listing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-cta-box {
+        flex-wrap: wrap;
+    }
+
+    .sport-cta-content {
+        min-width: 60%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .category-hero {
+        min-height: 550px;
+        padding-top: 100px;
+    }
+
+    .category-hero h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+    }
+
+    .category-hero p {
+        font-size: 13px;
+    }
+
+    .category-stats {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .category-stats strong {
+        font-size: 14px;
+    }
+
+    .sport-listings {
+        padding: 80px 0;
+    }
+
+    .sport-bike-image {
+        height: 260px;
+    }
+
+    .sport-bike-content {
+        padding: 22px;
+    }
+
+    .sport-bike-content h3 {
+        font-size: 23px;
+    }
+
+    .bike-specs {
+        gap: 5px;
+    }
+
+    .bike-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .bike-view-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sport-cta-box {
+        padding: 28px 22px;
+    }
+
+    .sport-cta-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 23px;
+    }
+
+    .sport-cta-content {
+        min-width: 100%;
+    }
+
+    .sport-cta-content h2 {
+        font-size: 22px;
+    }
+
+}

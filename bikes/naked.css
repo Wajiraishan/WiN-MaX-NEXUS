@@ -1,0 +1,988 @@
+/* =========================================
+   NAKED / STREET PAGE
+========================================= */
+
+.naked-hero {
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 90px;
+
+    background:
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(229, 9, 20, 0.20),
+            transparent 38%
+        ),
+        #070707;
+}
+
+.naked-grid {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.07;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.15) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.15) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+}
+
+
+.naked-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    top: 80px;
+
+    border: 1px solid rgba(229,9,20,0.15);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 60px rgba(229,9,20,0.02),
+        0 0 0 120px rgba(229,9,20,0.015);
+}
+
+
+.naked-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 35px;
+
+    color: #777;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.breadcrumb a {
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.breadcrumb a:hover {
+    color: #e50914;
+}
+
+
+.breadcrumb span:last-child {
+    color: #e50914;
+}
+
+
+.naked-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    color: #fff;
+
+    background: #e50914;
+
+    font-size: 28px;
+
+    transform: skewX(-8deg);
+
+    box-shadow:
+        12px 12px 0 rgba(229,9,20,0.12);
+}
+
+
+.naked-icon i {
+    transform: skewX(8deg);
+}
+
+
+.naked-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #e50914;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.naked-hero h1 {
+    margin: 0;
+
+    font-size: clamp(52px, 8vw, 105px);
+
+    line-height: 0.90;
+
+    font-weight: 900;
+
+    letter-spacing: -5px;
+}
+
+
+.naked-hero h1 span {
+    display: block;
+
+    color: #e50914;
+}
+
+
+.naked-hero p {
+    max-width: 650px;
+
+    margin: 30px 0 0;
+
+    color: #929292;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.naked-hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.naked-stats {
+    display: flex;
+
+    gap: 60px;
+
+    margin-top: 45px;
+}
+
+
+.naked-stats div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.naked-stats strong {
+    color: #fff;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.naked-stats small {
+    margin-top: 5px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   BIKES SECTION
+========================================= */
+
+.naked-bikes {
+    padding: 110px 0;
+
+    background: #090909;
+}
+
+
+.naked-heading {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+
+.naked-heading > span {
+    color: #e50914;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.naked-heading h2 {
+    margin: 12px 0 15px;
+
+    font-size: clamp(34px, 5vw, 58px);
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+}
+
+
+.naked-heading h2 strong {
+    color: #e50914;
+}
+
+
+.naked-heading p {
+    max-width: 580px;
+
+    margin: auto;
+
+    color: #707070;
+
+    line-height: 1.8;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.naked-bike-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.naked-bike-card {
+    overflow: hidden;
+
+    background: #101010;
+
+    border: 1px solid #1d1d1d;
+
+    transition: 0.4s ease;
+}
+
+
+.naked-bike-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(229,9,20,0.6);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.55);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.naked-bike-image {
+    position: relative;
+
+    height: 320px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(229,9,20,0.13),
+            transparent 55%
+        ),
+        #0b0b0b;
+}
+
+
+.naked-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    color: #2e2e2e;
+}
+
+
+.naked-placeholder i {
+    font-size: 90px;
+
+    transition: 0.5s ease;
+}
+
+
+.naked-placeholder span {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.naked-bike-card:hover .naked-placeholder i {
+    color: #e50914;
+
+    transform:
+        scale(1.08)
+        rotate(-3deg);
+}
+
+
+.naked-status {
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    padding: 8px 13px;
+
+    color: #fff;
+
+    background: #e50914;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.naked-number {
+    position: absolute;
+
+    right: 20px;
+    bottom: 10px;
+
+    color: rgba(255,255,255,0.05);
+
+    font-size: 70px;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.naked-bike-content {
+    padding: 30px;
+}
+
+
+.bike-category {
+    color: #e50914;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.naked-bike-content h3 {
+    margin: 10px 0;
+
+    color: #fff;
+
+    font-size: 27px;
+
+    font-weight: 800;
+}
+
+
+.naked-bike-content > p {
+    min-height: 48px;
+
+    color: #707070;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SPECS
+========================================= */
+
+.naked-specs {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 10px;
+
+    margin: 28px 0;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #1d1d1d;
+
+    border-bottom: 1px solid #1d1d1d;
+}
+
+
+.naked-specs div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.naked-specs i {
+    margin-bottom: 4px;
+
+    color: #e50914;
+
+    font-size: 12px;
+}
+
+
+.naked-specs small {
+    color: #505050;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.naked-specs strong {
+    color: #ddd;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.naked-price-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.naked-price-row div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.naked-price-row small {
+    color: #555;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.naked-price-row strong {
+    margin-top: 5px;
+
+    color: #fff;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.naked-details {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 16px;
+
+    color: #fff;
+
+    border: 1px solid #292929;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.naked-details i {
+    color: #e50914;
+
+    transition: 0.3s;
+}
+
+
+.naked-details:hover {
+    color: #fff;
+
+    background: #e50914;
+
+    border-color: #e50914;
+}
+
+
+.naked-details:hover i {
+    color: #fff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.naked-whatsapp {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    color: #ccc;
+
+    background: #151515;
+
+    border: 1px solid #202020;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+
+.naked-whatsapp i {
+    color: #25d366;
+
+    font-size: 16px;
+}
+
+
+.naked-whatsapp:hover {
+    color: #fff;
+
+    background: #25d366;
+
+    border-color: #25d366;
+}
+
+
+.naked-whatsapp:hover i {
+    color: #fff;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.naked-cta {
+    padding: 0 0 110px;
+
+    background: #090909;
+}
+
+
+.naked-cta-box {
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(229,9,20,0.14),
+            rgba(229,9,20,0.02)
+        ),
+        #111;
+
+    border: 1px solid #242424;
+}
+
+
+.naked-cta-symbol {
+    width: 75px;
+    height: 75px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e50914;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    transform: skewX(-8deg);
+}
+
+
+.naked-cta-symbol i {
+    transform: skewX(8deg);
+}
+
+
+.naked-cta-text {
+    flex: 1;
+}
+
+
+.naked-cta-text > span {
+    color: #e50914;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.naked-cta-text h2 {
+    margin: 8px 0;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.naked-cta-text h2 strong {
+    color: #e50914;
+}
+
+
+.naked-cta-text p {
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   NAVBAR FIX
+========================================= */
+
+.navbar {
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 9999;
+
+    height: 78px;
+}
+
+
+.nav-container {
+    height: 78px;
+}
+
+
+.nav-logo img {
+    max-height: 48px;
+
+    width: auto;
+}
+
+
+.nav-menu {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.nav-menu a {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .naked-bike-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .naked-cta-box {
+        flex-wrap: wrap;
+    }
+
+
+    .naked-cta-text {
+        min-width: 60%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+
+    .nav-container {
+        height: 70px;
+    }
+
+
+    .nav-logo img {
+        max-height: 42px;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .naked-hero {
+        min-height: 600px;
+
+        padding-top: 100px;
+    }
+
+
+    .naked-hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .naked-hero p {
+        font-size: 13px;
+    }
+
+
+    .naked-hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .naked-hero-buttons a {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .naked-stats {
+        gap: 25px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .naked-stats strong {
+        font-size: 13px;
+    }
+
+
+    .naked-bikes {
+        padding: 80px 0;
+    }
+
+
+    .naked-bike-image {
+        height: 260px;
+    }
+
+
+    .naked-bike-content {
+        padding: 22px;
+    }
+
+
+    .naked-bike-content h3 {
+        font-size: 23px;
+    }
+
+
+    .naked-specs {
+        gap: 5px;
+    }
+
+
+    .naked-price-row {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .naked-details {
+        justify-content: center;
+    }
+
+
+    .naked-cta-box {
+        padding: 28px 22px;
+    }
+
+
+    .naked-cta-symbol {
+        width: 60px;
+        height: 60px;
+
+        font-size: 22px;
+    }
+
+
+    .naked-cta-text {
+        min-width: 100%;
+    }
+
+
+    .naked-cta-text h2 {
+        font-size: 22px;
+    }
+
+}

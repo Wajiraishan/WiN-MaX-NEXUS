@@ -1,0 +1,1120 @@
+/* =========================================
+   SCOOTERS PAGE
+========================================= */
+
+.scooter-hero {
+
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    padding-top: 90px;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(229,9,20,0.20),
+            transparent 38%
+        ),
+        #070707;
+}
+
+
+.scooter-hero-pattern {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.06;
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,0.3) 1px,
+            transparent 1px
+        );
+
+    background-size: 35px 35px;
+}
+
+
+.scooter-hero::after {
+
+    content: "SCOOTER";
+
+    position: absolute;
+
+    right: -50px;
+
+    bottom: -35px;
+
+    color: rgba(255,255,255,0.025);
+
+    font-size: 150px;
+
+    font-weight: 900;
+
+    pointer-events: none;
+}
+
+
+.scooter-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+
+    color: #777;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.breadcrumb a:hover {
+
+    color: #e50914;
+}
+
+
+.breadcrumb span:last-child {
+
+    color: #e50914;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.scooter-icon {
+
+    width: 72px;
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    background: #e50914;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    transform: skewX(-8deg);
+
+    box-shadow:
+        12px 12px 0 rgba(229,9,20,0.10);
+}
+
+
+.scooter-icon i {
+
+    transform: skewX(8deg);
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.scooter-label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #e50914;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.scooter-hero h1 {
+
+    margin: 0;
+
+    font-size: clamp(55px, 8vw, 105px);
+
+    line-height: 0.9;
+
+    font-weight: 900;
+
+    letter-spacing: -5px;
+}
+
+
+.scooter-hero h1 span {
+
+    display: block;
+
+    color: #e50914;
+}
+
+
+.scooter-hero p {
+
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    color: #929292;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.scooter-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.scooter-stats {
+
+    display: flex;
+
+    gap: 60px;
+
+    margin-top: 45px;
+}
+
+
+.scooter-stats div {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.scooter-stats strong {
+
+    color: #fff;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.scooter-stats small {
+
+    margin-top: 5px;
+
+    color: #555;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   COLLECTION
+========================================= */
+
+.scooter-bikes {
+
+    padding: 110px 0;
+
+    background: #090909;
+}
+
+
+.scooter-heading {
+
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+
+.scooter-heading > span {
+
+    color: #e50914;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.scooter-heading h2 {
+
+    margin: 12px 0 15px;
+
+    font-size: clamp(35px, 5vw, 58px);
+
+    font-weight: 800;
+
+    letter-spacing: -3px;
+}
+
+
+.scooter-heading h2 strong {
+
+    color: #e50914;
+}
+
+
+.scooter-heading p {
+
+    max-width: 580px;
+
+    margin: auto;
+
+    color: #707070;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.scooter-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.scooter-card {
+
+    overflow: hidden;
+
+    background: #101010;
+
+    border: 1px solid #1d1d1d;
+
+    transition: 0.4s ease;
+}
+
+
+.scooter-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(229,9,20,0.6);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.55);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.scooter-image {
+
+    position: relative;
+
+    height: 320px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(229,9,20,0.13),
+            transparent 55%
+        ),
+        #0b0b0b;
+}
+
+
+.scooter-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    color: #2e2e2e;
+}
+
+
+.scooter-placeholder i {
+
+    font-size: 90px;
+
+    transition: 0.5s ease;
+}
+
+
+.scooter-placeholder span {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.scooter-card:hover .scooter-placeholder i {
+
+    color: #e50914;
+
+    transform:
+        scale(1.08)
+        rotate(-3deg);
+}
+
+
+.scooter-status {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    padding: 8px 13px;
+
+    color: #fff;
+
+    background: #e50914;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.scooter-number {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 10px;
+
+    color: rgba(255,255,255,0.05);
+
+    font-size: 70px;
+
+    font-weight: 900;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.scooter-content {
+
+    padding: 30px;
+}
+
+
+.scooter-type {
+
+    color: #e50914;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.scooter-content h3 {
+
+    margin: 10px 0;
+
+    color: #fff;
+
+    font-size: 27px;
+
+    font-weight: 800;
+}
+
+
+.scooter-content > p {
+
+    min-height: 48px;
+
+    color: #707070;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SPECS
+========================================= */
+
+.scooter-specs {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 10px;
+
+    margin: 28px 0;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #1d1d1d;
+
+    border-bottom: 1px solid #1d1d1d;
+}
+
+
+.scooter-specs div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.scooter-specs i {
+
+    margin-bottom: 4px;
+
+    color: #e50914;
+
+    font-size: 12px;
+}
+
+
+.scooter-specs small {
+
+    color: #505050;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.scooter-specs strong {
+
+    color: #ddd;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.scooter-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.scooter-price {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.scooter-price small {
+
+    color: #555;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.scooter-price strong {
+
+    margin-top: 5px;
+
+    color: #fff;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.scooter-details {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 16px;
+
+    color: #fff;
+
+    border: 1px solid #292929;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.scooter-details i {
+
+    color: #e50914;
+
+    transition: 0.3s;
+}
+
+
+.scooter-details:hover {
+
+    background: #e50914;
+
+    border-color: #e50914;
+}
+
+
+.scooter-details:hover i {
+
+    color: #fff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.scooter-whatsapp {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    color: #ccc;
+
+    background: #151515;
+
+    border: 1px solid #202020;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+
+.scooter-whatsapp i {
+
+    color: #25d366;
+
+    font-size: 16px;
+}
+
+
+.scooter-whatsapp:hover {
+
+    color: #fff;
+
+    background: #25d366;
+
+    border-color: #25d366;
+}
+
+
+.scooter-whatsapp:hover i {
+
+    color: #fff;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.scooter-cta {
+
+    padding: 0 0 110px;
+
+    background: #090909;
+}
+
+
+.scooter-cta-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(229,9,20,0.14),
+            rgba(229,9,20,0.02)
+        ),
+        #111;
+
+    border: 1px solid #242424;
+}
+
+
+.scooter-cta-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e50914;
+
+    color: #fff;
+
+    font-size: 27px;
+
+    transform: skewX(-8deg);
+}
+
+
+.scooter-cta-icon i {
+
+    transform: skewX(8deg);
+}
+
+
+.scooter-cta-content {
+
+    flex: 1;
+}
+
+
+.scooter-cta-content > span {
+
+    color: #e50914;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+
+.scooter-cta-content h2 {
+
+    margin: 8px 0;
+
+    color: #fff;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.scooter-cta-content h2 strong {
+
+    color: #e50914;
+}
+
+
+.scooter-cta-content p {
+
+    margin: 0;
+
+    color: #707070;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   NAVBAR FIX
+========================================= */
+
+.navbar {
+
+    position: fixed !important;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    z-index: 9999;
+
+    height: 78px;
+}
+
+
+.nav-container {
+
+    height: 78px;
+}
+
+
+.nav-logo img {
+
+    max-height: 48px;
+
+    width: auto;
+}
+
+
+.nav-menu {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.nav-menu a {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.menu-toggle {
+
+    display: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .scooter-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .scooter-cta-box {
+
+        flex-wrap: wrap;
+    }
+
+
+    .scooter-cta-content {
+
+        min-width: 60%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        height: 70px;
+    }
+
+
+    .nav-container {
+
+        height: 70px;
+    }
+
+
+    .nav-logo img {
+
+        max-height: 42px;
+    }
+
+
+    .menu-toggle {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .scooter-hero {
+
+        min-height: 610px;
+
+        padding-top: 100px;
+    }
+
+
+    .scooter-hero h1 {
+
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .scooter-hero p {
+
+        font-size: 13px;
+    }
+
+
+    .scooter-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .scooter-buttons a {
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+    .scooter-stats {
+
+        gap: 25px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .scooter-stats strong {
+
+        font-size: 13px;
+    }
+
+
+    .scooter-bikes {
+
+        padding: 80px 0;
+    }
+
+
+    .scooter-image {
+
+        height: 260px;
+    }
+
+
+    .scooter-content {
+
+        padding: 22px;
+    }
+
+
+    .scooter-content h3 {
+
+        font-size: 23px;
+    }
+
+
+    .scooter-specs {
+
+        gap: 5px;
+    }
+
+
+    .scooter-bottom {
+
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .scooter-details {
+
+        justify-content: center;
+    }
+
+
+    .scooter-cta-box {
+
+        padding: 28px 22px;
+    }
+
+
+    .scooter-cta-icon {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 22px;
+    }
+
+
+    .scooter-cta-content {
+
+        min-width: 100%;
+    }
+
+
+    .scooter-cta-content h2 {
+
+        font-size: 22px;
+    }
+
+}
